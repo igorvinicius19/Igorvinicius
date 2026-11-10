@@ -1,0 +1,235 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1000px;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    height: 110px;
+    padding: 10px 5%;
+    background: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    gap: 10px;
+    border-bottom: 3px solid #ff7900;
+}
+
+/* LOGO */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-fit {
+    color: white;
+}
+
+.logo-life {
+    color: #ff7900;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #ff7900;
+}
+
+/* IMAGEM PRINCIPAL */
+.banner {
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.75), transparent);
+    z-index: 1;
+}
+
+.informacao-banner {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.informacao-banner h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.informacao-banner p {
+    font-size: 20px;
+}
+
+/* SELO DE DESCONTO */
+.selo-desconto {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background: #ff7900;
+    color: white;
+    padding: 18px 25px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+/* PLANOS */
+.secao-planos {
+    padding: 30px 5%;
+    background: #111;
+}
+
+.titulo-secao {
+    border-left: 6px solid #ff7900;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.titulo-secao h2 {
+    font-size: 28px;
+}
+
+.lista-planos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-plano {
+    background: #242424;
+    flex: 1;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.card-plano h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.card-plano p {
+    color: #ff7900;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-plano span {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* DICAS IMPORTANTES */
+.secao-dicas {
+    margin: 20px 5%;
+    padding: 20px;
+    background: #242424;
+    border-radius: 10px;
+}
+
+.secao-dicas h2 {
+    margin-bottom: 15px;
+    color: #ff7900;
+}
+
+.area-rolagem {
+    height: 100px;
+    overflow: auto;
+    line-height: 1.6;
+    padding-right: 10px;
+}
+
+.area-rolagem p {
+    margin-bottom: 12px;
+}
+
+/* BOTÃO FIXO */
+.btn-fixo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #ff7900;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 20;
+}
+
+.btn-fixo:hover {
+    background: #e66d00;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: #0c0c0c;
+    padding: 25px 5%;
+    text-align: center;
+    border-top: 2px solid #ff7900;
+}
+
+.logo-rodape {
+    margin-bottom: 15px;
+}
+
+.rodape p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.copyright {
+    font-size: 13px;
+}
